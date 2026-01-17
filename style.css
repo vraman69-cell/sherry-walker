@@ -246,6 +246,114 @@ header {
     margin-bottom: 0.5rem;
 }
 
+/* Education Facts Section */
+.education-facts {
+    padding: 4rem 2rem;
+    background-color: white;
+}
+
+.education-facts h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #dc2626;
+    margin-bottom: 3rem;
+}
+
+.facts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.fact-item {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #f3f4f6;
+    border-radius: 10px;
+    border-top: 4px solid #1e3a8a;
+    transition: transform 0.3s;
+}
+
+.fact-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.fact-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1e3a8a;
+    margin-bottom: 0.5rem;
+}
+
+.fact-label {
+    font-size: 1rem;
+    color: #6b7280;
+    font-weight: 500;
+}
+
+/* Voter Info Section */
+.voter-info {
+    padding: 4rem 2rem;
+    background-color: #f3f4f6;
+}
+
+.voter-info h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #dc2626;
+    margin-bottom: 1rem;
+}
+
+.voter-info .lead {
+    text-align: center;
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    color: #4b5563;
+}
+
+.dates-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.date-item {
+    background: white;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid #1e3a8a;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    line-height: 1.6;
+}
+
+.date-item.highlight {
+    background: linear-gradient(135deg, #dc2626 0%, #1e3a8a 100%);
+    color: white;
+    border-left: 4px solid #fbbf24;
+    font-size: 1.1rem;
+}
+
+.date-item strong {
+    color: #1e3a8a;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.date-item.highlight strong {
+    color: white;
+}
+
+.voter-note {
+    text-align: center;
+    margin-top: 2rem;
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
 /* Contact Section */
 .contact {
     padding: 4rem 2rem;
@@ -458,6 +566,20 @@ footer p {
         grid-template-columns: 1fr;
     }
     
+    .facts-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .fact-number {
+        font-size: 2rem;
+    }
+    
+    .date-item {
+        padding: 1rem;
+        font-size: 0.95rem;
+    }
+    
     .page-header h1 {
         font-size: 2rem;
     }
@@ -483,5 +605,9 @@ footer p {
     
     .hero-content h1 {
         font-size: 1.75rem;
+    }
+    
+    .facts-grid {
+        grid-template-columns: 1fr;
     }
 }
